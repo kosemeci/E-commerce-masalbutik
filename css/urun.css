@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --primary: #ec994b;
+    --white: #ffffff;
+    --bg: #f5f5f5;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: #797979;
+    transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #222224;
+}
+
+::-webkit-scrollbar-track {
+    background: #f9f9f9;
+}
+
+body {
+    font-size: 1.6rem;
+    background: var(--bg);
+}
+
+.container {
+    max-width: 124rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 3rem;
+    color: var(--primary);
+    padding: 2rem 0;
+}
+
+#tranding {
+    padding: 2rem 0 10rem 0;
+}
+
+@media (max-width:1440px) {
+    #tranding {
+        padding: 7rem 0;
+    }
+}
+
+#tranding .tranding-slider {
+    height: 52rem;
+    padding: 2rem 0;
+    position: relative;
+}
+
+@media (max-width:500px) {
+    #tranding .tranding-slider {
+        height: 45rem;
+    }
+}
+
+.tranding-slide {
+    width: 37rem;
+    height: 42rem;
+    position: relative;
+}
+
+@media (max-width:500px) {
+    .tranding-slide {
+        width: 28rem !important;
+        height: 36rem !important;
+    }
+
+    .tranding-slide .tranding-slide-img img {
+        width: 28rem !important;
+        height: 36rem !important;
+    }
+}
+
+.tranding-slide .tranding-slide-img img {
+    width: 37rem;
+    height: 42rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.tranding-slide .tranding-slide-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.tranding-slide-content .food-price {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--white);
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: var(--white);
+}
+
+.food-rating {
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.rating ion-icon {
+    color: var(--primary);
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
+}
+
+.tranding-slider-control {
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+    left: 58% !important;
+    transform: translateX(-58%) !important;
+}
+
+@media (max-width:990px) {
+    .tranding-slider-control .swiper-button-next {
+        left: 70% !important;
+        transform: translateX(-70%) !important;
+    }
+}
+
+@media (max-width:450px) {
+    .tranding-slider-control .swiper-button-next {
+        left: 80% !important;
+        transform: translateX(-80%) !important;
+    }
+}
+
+@media (max-width:990px) {
+    .tranding-slider-control .swiper-button-prev {
+        left: 30% !important;
+        transform: translateX(-30%) !important;
+    }
+}
+
+@media (max-width:450px) {
+    .tranding-slider-control .swiper-button-prev {
+        left: 20% !important;
+        transform: translateX(-20%) !important;
+    }
+}
+
+.tranding-slider-control .slider-arrow {
+    background: var(--white);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    left: 42%;
+    transform: translateX(-42%);
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+    font-size: 2rem;
+    color: #222224;
+}
+
+.tranding-slider-control .slider-arrow::after {
+    content: '';
+}
+
+.tranding-slider-control .swiper-pagination {
+    position: relative;
+    width: 15rem;
+    bottom: 1rem;
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--primary);
+}
+
+.fix-wp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: #12c32f;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.fix-wp-icon:hover {
+    color: #12c32f;
+}
+
+@media (max-width:700px) {
+    .fix-wp-icon {
+        font-size: 30px;
+    }
+}
+
+.urun_container {
+    padding: 6% 8% 3% 8%;
+    justify-content: space-around;
+}
+
+.urun_row,
+.anim_kargo {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.buton_sepet, .buton__sepet {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 12%;
+    background-color: #747d8c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.sepet_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.like_buton {
+    padding: 10px 5%;
+    border: none;
+    background-color: transparent;
+}
+
+.sepet_like {
+    font-size: xx-large;
+    color: #747d8c;
+}
+
+.urun_beden {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.beden_baslik {
+    flex: 1;
+    max-width: 145px;
+    /* Sol taraftaki alanı kaplar */
+}
+
+.beden_secenekler {
+    flex: 2;
+    display: flex;
+    /* Sağ taraftaki alanı kaplar */
+}
+
+.beden_secenekler .col-2 {
+    padding: 0%;
+}
+
+.beden_buton {
+    padding: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: 78px;
+    margin-bottom: 4px;
+}
+
+.beden_buton:hover {
+    background-color: #f0f0f0;
+}
+
+.anim_kargo p {
+    white-space: pre-wrap;
+    /* Metnin satır sonu dönüşlerini engeller */
+    overflow: hidden;
+    /* Taşan içeriği gizler */
+    position: relative;
+    /* Pozisyonunu belirt */
+    animation: zipla 1s ease infinite alternate;
+    /* Animasyonu tanımlar */
+    transform-origin: center;
+    /* Dönüşün orijinali */
+}
+
+@keyframes zipla {
+    0% {
+        transform: translateY(0) scale(1);
+        /* Başlangıç konumu */
+    }
+
+    50% {
+        transform: translateY(-20px) scale(1.1);
+        /* Orta konum */
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        /* Bitiş konumu */
+    }
+}
+
+.kucuk-fotograf {
+    margin-bottom: 5px;
+}
+
+.whatsapp-butonu {
+    margin-top: 3%;
+    background-color: #2f3542;
+    /* WhatsApp yeşili */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.whatsapp-butonu a {
+    color: white;
+    text-decoration: none;
+}
+
+.whatsapp-butonu a:hover {
+    background-color: transparent;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.whatsapp-butonu i {
+    color: rgb(35, 201, 43);
+    font-size: larger;
+}
+
+
+
+.urun_bilgileri li {
+    margin-top: 1%;
+}
+
+.urun_bilgileri ul {
+    list-style-type: none;
+}
+
+.urun_bilgileri ul li {
+    position: relative;
+    /* Göreceli konumlandırma */
+    padding-left: 20px;
+    /* Ok işareti için soldan boşluk */
+}
+
+/* Ok işareti için stil */
+.urun_bilgileri ul li::before {
+    content: '\2713';
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    margin-left: -25px;
+}
+
+
+
+.urun-fiyat {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #2f3542;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.custom-alert .alert-content {
+    text-align: center;
+}
+
+.custom-alert .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.custom-alert p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.custom-alert button {
+    padding: 10px 20px;
+    background-color: #ec994b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom-alert button:hover {
+    background-color: #d0832f;
+}
+
+.col-auto {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.urun_ozellikleri {
+    margin-top: 8%;
+    margin-bottom: 4%;
+    color: #2f3542;
+}
+
+.beden_buton.clicked {
+    border: 3px solid #2f3542;
+}
+
+
+.diger_resimler {
+    margin-right: 0px;
+}
+.col-2-5 {
+    flex: 0 0 20%; /* Yüzde bazında genişlik: 20% */
+    max-width: 20%;
+    padding: 5px 0px 0px 15px;
+}

@@ -1,0 +1,401 @@
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.trend_urun{
+    margin-top: 3.5%;
+}
+@media (max-width: 636px) {
+    .navbar-fixed {
+        position: static; 
+    }
+    .section{
+        margin-top: 2px !important;
+    }
+    .trend_urun{
+        margin-top: 0%;
+    }
+    
+}
+
+@media (min-width:682px) and (max-width:732px) {
+    .girisCarousel{
+        padding: 2% 4% !important;
+    }
+}
+@media (min-width:682px) and (max-width:999px) {
+    .trend_urun{
+        margin-top: 6%;
+    }
+}
+
+
+.section{
+    margin-top: 20px;
+    padding: 2% 8%;
+}
+
+.sectionRow{
+    margin-top: 4%;
+}
+.sectionRow h5, .mobil-section h5{
+    color:#747d8c;
+    font-weight: 800;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 1px;
+}
+
+.sidebar input[type="radio"] {
+    display: none;
+}
+
+.sidebar label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 10%;
+}
+
+.sidebar label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+.sidebar input[type="radio"]:checked + label:before {
+    background-color: #333;
+}
+
+
+.sectionRow .card-img img{
+    max-width: 280px;
+    max-height: 330px;
+    border-radius: 0% 22% ;
+}
+
+
+
+.card-img-top{
+    max-height: 420px;
+}
+
+
+.sectionRow .card{
+    border:0;
+    border-radius: 0% 22% 0% 0% ;
+}
+
+.card-body{
+    
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 10px 1px !important;
+    
+}
+
+.card-title, .card-text{
+    font-size:17px;
+    color: #2f3542 !important;
+    font-weight: 500 !important;
+}
+
+.card-title{
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    margin-bottom: 0px !important;
+    max-width: 100%;
+}
+
+
+
+.dropbtn {
+    color: #747d8c;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 0%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 240px !important;
+    z-index: 1;
+    border: 1px solid #747d8c;
+}
+.dropdown-content ul li {
+    padding: 4px 0;
+    font-size: 18px;
+}
+.dropdown-content ul {
+    margin-top: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.mobil-section{
+    display: none;
+}
+
+@media (max-width:990px) {
+    .section{
+        display: none;
+    }
+    .mobil-section{
+        display: block !important;
+    }
+    .slide {
+        padding: 0px !important;
+    }
+    
+}
+
+@media (min-width:576px) and (max-width:990px) {
+    .dropbtn{
+        font-size: x-large !important;
+    }
+
+}
+.mobil-section{
+    padding: 2% 4%;
+}
+.mobil-section .row{
+    padding: 15px;
+}
+
+.dropdown-content ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.dropdown-content ul li {
+    padding-left: 20px; 
+    position: relative;
+}
+
+.dropdown-content ul li:before {
+    content: none; 
+}
+
+
+
+.mobil-section .card-img img{
+    border-radius: 0% 22% ;
+}
+
+.mobil-section .card{
+    border-radius: 0% 22% 0% 0% ;
+    border: 0;
+    max-width: 340px;
+    margin-right: 0px;
+}
+
+.girisCarousel{
+    justify-content: space-around;
+    max-width: max-content;
+}
+
+.carousel-item img {
+    max-height: 100%;
+    width: 80%;
+}
+@media (min-width:700px) {
+    .slide{
+        padding: 0px 18px;
+    }
+}
+
+.like_icon {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    color: #2f3542; /* Beyaz kalp ikonu */
+    font-size: 28px; /* İkon boyutu */
+    cursor: pointer; /* İkona tıklanabilirlik özelliği */
+}
+
+.fix-wp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: #12c32f;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.fix-wp-icon:hover{
+    color: #12c32f;
+}
+
+@media (max-width:700px) {
+    .fix-wp-icon{
+        font-size: 30px;
+    }
+    
+}
+.card-text {
+    color: #747d8c !important;
+  }
+  
+  .old-price {
+    opacity: 0.5;
+    text-decoration: line-through;
+    font-size: small;
+
+  }
+
+
+  @media (max-width:666px) {
+    .price-container{
+        font-size: small;
+    }
+    .old-price {
+        font-size: xx-small;
+    }
+    .like_icon {
+        font-size: 16px; 
+    }
+  }
+
+  .sectionRow a{
+    color: black;
+  }
+  .sectionRow a:hover{
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+
+
+
+  .container_home{
+    display: flex;
+}
+
+  .container_home_pc {
+    display: flex;
+    margin-top: 97px;
+}
+
+::-webkit-scrollbar {
+    width: 1.1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: #797979;
+    transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #222224;
+}
+
+::-webkit-scrollbar-track {
+    background: #f9f9f9;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Saydamlık ayarlamak için rgba() kullanıyoruz */
+    color: black; /* Metin rengi */
+    text-align: center;
+    padding: 9px; /* İsteğe bağlı: Metin ve kenarlar arasındaki boşluk */
+    box-sizing: border-box;
+    font-size: 68px;
+    letter-spacing: 15px;
+}
+
+@media (max-width:480px) {
+    .container_home_pc{
+        margin-top: 0px;
+    }
+    .overlay {
+        padding: 2px; /* İsteğe bağlı: Metin ve kenarlar arasındaki boşluk */
+        font-size: 30px;
+        letter-spacing: 8px;
+    }
+    .card-title, .card-text{
+        font-size: 12px;
+    }
+    
+}
+.card{
+    background-color:#f6f6f6 !important;
+}
+
+.erkek_cocuk img, .kiz_cocuk img, .trend_urun img{
+    display: block;
+    width: 100%;
+    max-height: 800px;
+    
+}
+
+
+.kiz_cocuk, .erkek_cocuk, .trend_urun {
+    position: relative;
+}
+
+
+.toggle-content {
+    display: none;
+}
+
+.toggle-content.show {
+    display: block;
+}
+
+
+
+.fixed {
+    position: fixed;
+    top: 90px;
+    left: 8%;
+    width: 250px; /* veya istediğiniz sabit genişlik */
+    /* İstenilen diğer stiller */
+}
+.sectionRow .col-7{
+    padding: 0px 0px 0px 15px;
+}
+
+
+
+
+@media (max-width: 990px) {
+    .sidebar{
+        padding-left: 15px;
+    }
+    .sidebar label {
+        padding-left: 20%;
+    }
+}
+
+.sectionBaslik,.mobilSectionBaslik{
+    letter-spacing: 4px;
+}

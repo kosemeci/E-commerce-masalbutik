@@ -1,0 +1,189 @@
+.sepet {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 60px 8px 120px 8px ;
+}
+
+@media screen and (max-width: 358px) {
+    .sepet {
+        padding: 20px 0 !important;
+    }
+}
+@media screen and (max-width: 378px) {
+    .sepet {
+        padding: 20px 10px;
+    }
+}
+
+.sepet h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.urun {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.urun img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.urun-aciklama {
+    flex: 1;
+}
+
+.urun-aciklama p{
+    margin: 0;
+}
+
+.urun-adet {
+    display: flex;
+    align-items: center;
+}
+
+.urun-adet input {
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+
+#sepeti-onayla {
+    background-color: #38c662;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 240px;
+
+}
+
+#sepeti-onayla:hover {
+    background-color: #27b220;
+}
+
+.sepet_onay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* İstediğiniz boşluğa göre ayarlayabilirsiniz */
+}
+.sepet_onay {
+    display: flex;
+    
+}
+
+.alisverise-devam {
+    margin-bottom: 20px;
+    margin-left: auto; /* Sağa yaslanma */
+}
+#alisverise-devam-et{
+    background-color: #2f3542;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 3px 8px;
+}
+
+
+#toplam-tutar,
+#sepeti-onayla {
+    margin-top: 10px; /* İstediğiniz boşluğa göre ayarlayabilirsiniz */
+}
+
+.urun-sil{
+    background-color: #747d8c;
+    border: none; /* Kenarlık olmadan */
+    padding: 6px 12px; /* İç boşluklar */
+    color: rgb(255, 255, 255);
+
+
+}
+
+.sepetiniz {
+    color: #2f3542; /* Gri renk */
+    letter-spacing: 2px; /* Harfler arası mesafe */
+}
+
+@media screen and (max-width: 365px) {
+    .sepetiniz {
+        font-size: 18px; /* Ekran genişliği 365 pikselden küçükse font boyutunu küçült */
+    }
+}
+
+.indirim-kuponu {
+    display: flex;
+    align-items: center;
+}
+
+.indirim-kuponu input[type="text"] {
+    padding: 5px;
+    margin: 10px 10px 10px 0px;
+    width: 160px;
+    border-radius: 12px;
+
+}
+
+.indirim-kuponu button {
+    padding: 5px 10px;
+    background-color: #2f3542;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.indirim-kuponu button:hover {
+    background-color: #45a049;
+}
+
+.fix-wp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: #12c32f;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.fix-wp-icon:hover{
+    color: #12c32f;
+}
+
+@media (max-width:700px) {
+    .fix-wp-icon{
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width:576px) {
+    h3 {
+        font-size: 14px !important;
+    }
+    
+}
+
+@media (min-width:998px) {
+    .sepet {
+        margin: 8%;
+    }
+    
+}
